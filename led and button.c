@@ -20,12 +20,13 @@ int main(void)
 				 _delay_ms(220);
 				 if((PIND & (1>>PD1))=0)
 				 {
-				 for(i=7,i>=0);
+				 for(i=7,i>=0)
 				 {
 				 PORTC|=(i>>7);	
 				 _delay_ms(220);
 				 PORTC &=~ (i>>7);
-				 _delay_ms(220); }
+				 _delay_ms(220);
+				 }
 	}
 
 			 }
